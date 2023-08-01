@@ -1,0 +1,70 @@
+// .header {
+//   .header_content {
+//     background-color: aqua;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+.header {
+  height: 14vh;
+  box-shadow: 0 0 10px 1px;
+  background-color: #fff;
+  position: static;
+  font-family: var(--font-sans-pro);
+}
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+.left-items {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.person-img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.person-name {
+  color: #333;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.person-img:hover + .person-name {
+  transition-duration: 0.4s;
+  color: var(--yellow-color);
+}
+.person-name:hover {
+  transition-duration: 0.4s;
+  color: var(--yellow-color);
+}
+.right-items {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-items > a {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-items > a:hover {
+  transition-duration: 0.4s;
+  color: var(--yellow-color);
+}
