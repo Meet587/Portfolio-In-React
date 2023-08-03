@@ -1,3 +1,5 @@
+@import '../Theme/global.scss';
+
 // .header {
 //   .header_content {
 //     background-color: aqua;
@@ -5,12 +7,12 @@
 //     justify-content: space-between;
 //   }
 // }
-.header {
+header {
   height: 14vh;
+  background-color: $bg-color;
   box-shadow: 0 0 10px 1px;
-  background-color: #fff;
   position: static;
-  font-family: var(--font-sans-pro);
+  font-family: $font-family;
 }
 .header_content {
   display: flex;

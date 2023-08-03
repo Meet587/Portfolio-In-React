@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <section id="home" className="home">
-        <header className="header">
+        {/* <header className="header">
           <div className="header_content">
             <div className="left-items">
               <img
@@ -22,7 +22,7 @@ const Home = () => {
               <a href="#contact">CONTACT</a>
             </div>
           </div>
-        </header>
+        </header> */}
 
         <div className="home-hero">
           <div className="logos">
