@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_primary{
+    outline: none;
+    background-color: $primary_color;
+}

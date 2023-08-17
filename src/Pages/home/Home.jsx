@@ -5,24 +5,7 @@ const Home = () => {
   return (
     <>
       <section id="home" className="home">
-        {/* <header className="header">
-          <div className="header_content">
-            <div className="left-items">
-              <img
-                src="./img/profile-pic.png"
-                alt="img"
-                className="person-img"
-              ></img>
-              <span className="person-name">Meet Rakholiya</span>
-            </div>
-            <div className="right-items">
-              <a href="./index.html">HOME</a>
-              <a href="#about">ABOUT</a>
-              <a href="#project">PORTFOLIO</a>
-              <a href="#contact">CONTACT</a>
-            </div>
-          </div>
-        </header> */}
+
 
         <div className="home-hero">
           <div className="logos">

@@ -1,12 +1,6 @@
-@import '../Theme/global.scss';
+@import "../Theme/global.scss";
+@import "../assets/style/globle.scss";
 
-// .header {
-//   .header_content {
-//     background-color: aqua;
-//     display: flex;
-//     justify-content: space-between;
-//   }
-// }
 header {
   height: 14vh;
   background-color: $bg-color;
@@ -18,55 +12,89 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 4rem;
+
+  .brand_icon {
+    img:hover + a {
+      color: $font-hover-color;
+      transition-duration: 0.4s;
+    }
+    a:hover {
+      cursor: pointer;
+      color: $font-hover-color;
+      transition-duration: 0.4s;
+    }
+    a {
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+    }
+  }
+
+  .navigation {
+    ul {
+      a {
+        margin-right: 2rem;
+        text-decoration: none;
+        color: $font-color;
+        font-weight: 600;
+
+        &:hover {
+          color: $font-hover-color;
+          transition-duration: 0.4s;
+        }
+      }
+    }
+  }
 }
-.left-items {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: #333;
-}
-.person-img {
-  height: 3.5rem;
-  width: 3.5rem;
-  border-radius: 50%;
-  cursor: pointer;
-}
-.person-name {
-  color: #333;
-  padding-left: 15px;
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-  font-weight: 700;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
-.person-img:hover + .person-name {
-  transition-duration: 0.4s;
-  color: var(--yellow-color);
-}
-.person-name:hover {
-  transition-duration: 0.4s;
-  color: var(--yellow-color);
-}
-.right-items {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-}
-.right-items > a {
-  font-size: 1.2em;
-  font-weight: 700;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  color: #333;
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.right-items > a:hover {
-  transition-duration: 0.4s;
-  color: var(--yellow-color);
-}
+// .left-items {
+//   width: 50%;
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+//   color: #333;
+// }
+// .person-img {
+//   height: 3.5rem;
+//   width: 3.5rem;
+//   border-radius: 50%;
+//   cursor: pointer;
+// }
+// .person-name {
+//   color: #333;
+//   padding-left: 15px;
+//   display: flex;
+//   align-items: center;
+//   font-size: 1.5rem;
+//   font-weight: 700;
+//   cursor: pointer;
+//   letter-spacing: 1px;
+// }
+// .person-img:hover + .person-name {
+//   transition-duration: 0.4s;
+//   color: var(--yellow-color);
+// }
+// .person-name:hover {
+//   transition-duration: 0.4s;
+//   color: var(--yellow-color);
+// }
+// .right-items {
+//   width: 50%;
+//   display: flex;
+//   justify-content: flex-end;
+// }
+// .right-items > a {
+//   font-size: 1.2em;
+//   font-weight: 700;
+//   padding: 1rem 2rem;
+//   text-decoration: none;
+//   color: #333;
+//   position: relative;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+// }
+// .right-items > a:hover {
+//   transition-duration: 0.4s;
+//   color: var(--yellow-color);
+// }

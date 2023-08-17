@@ -9,7 +9,7 @@ import Home from "./Pages/home/Home";
 function App() {
   return (
     <>
-    <Header />
+      <Header />
       <Home />
       <About />
       <Project />
