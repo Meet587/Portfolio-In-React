@@ -1,4 +1,5 @@
 @import "../home/home.scss";
+@import '../../assets/style/globle.scss';
 .about {
   background: var(--bg-color);
   min-height: 100vh;
@@ -82,27 +83,27 @@
 
 /* --------------- btn class ---------------- */
 
-.btn {
-  background-color: var(--yellow-color);
-  border: 3px solid var(--yellow-color);
-  border-radius: 10px;
-  padding: 1rem 3rem;
-  letter-spacing: 1px;
-  display: inline-block;
-  border-radius: 5px;
-  transition: transform 0.3s;
-  box-shadow: 0px 0px 5px 1px;
-}
-.btn:hover {
-  box-shadow: 2px 2px 10px 5px;
-  transform: translateY(-10px);
-  border: none;
-}
+// .btn {
+//   background-color: var(--yellow-color);
+//   border: 3px solid var(--yellow-color);
+//   border-radius: 10px;
+//   padding: 1rem 3rem;
+//   letter-spacing: 1px;
+//   display: inline-block;
+//   border-radius: 5px;
+//   transition: transform 0.3s;
+//   box-shadow: 0px 0px 5px 1px;
+// }
+// .btn:hover {
+//   box-shadow: 2px 2px 10px 5px;
+//   transform: translateY(-10px);
+//   border: none;
+// }
 
-.btn > a {
-  font-family: var(--font-sans-pro);
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #333;
-}
+// .btn > a {
+//   font-family: var(--font-sans-pro);
+//   font-weight: 600;
+//   font-size: 1.5rem;
+//   text-decoration: none;
+//   color: #333;
+// }

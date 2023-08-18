@@ -1,5 +1,6 @@
 import React from "react";
-import './contact.scss'
+import { Button } from "reactstrap";
+import "./contact.scss";
 
 const Contact = () => {
   return (
@@ -7,7 +8,7 @@ const Contact = () => {
       <section id="contact" className="contact sec-pad">
         <div className="main-container">
           <h2 className="heading_sec">
-            <span className="heading_sec_main">CONTACT</span>
+            <span className="heading_2">CONTACT</span>
             <span className="heading_sec_sub">
               Feel free to Contact me by submitting the form below and I will
               get back to you as soon as possible
@@ -54,9 +55,12 @@ const Contact = () => {
                   placeholder="Enter your message..."
                 ></textarea>
               </div>
-              <button type="submit" className="btn btn-submit">
+              {/* <button type="submit" className="btn btn-submit">
                 SUBMIT
-              </button>
+              </button> */}
+              <Button type="submit" className="btn_primary fw-bold">
+                Submit
+              </Button>
             </form>
           </div>
         </div>

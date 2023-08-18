@@ -1,12 +1,10 @@
 import React from "react";
-import './home.scss'
+import "./home.scss";
 
 const Home = () => {
   return (
     <>
       <section id="home" className="home">
-
-
         <div className="home-hero">
           <div className="logos">
             <a
