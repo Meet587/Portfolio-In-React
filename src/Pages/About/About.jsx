@@ -1,12 +1,12 @@
 import React from "react";
-import { Button } from "reactstrap";
+import { Button, Col, Row } from "reactstrap";
 import ButtonPrimarry from "../../Components/Button/Button";
 import "./about.scss";
 
 const About = () => {
   return (
     <>
-      <section id="about" className="about sec-pad">
+      {/* <section id="about" className="about sec-pad">
         <div className="main-container">
           <h2 className="heading_sec">
             <div className="heading_2">ABOUT ME</div>
@@ -47,9 +47,49 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section>
-
+      </section> */}
+      <section id="about">
+        <div className="py-4 mb-5">
+          <div className="heading_2">ABOUT ME</div>
+          <div className="text-muted heading_text">
+            <p>
+              Here you will find more information about me, what I do, and my
+              current skills mostly in terms of programming and technology
+            </p>
+          </div>
+        </div>
+        <Row className="m-5 px-5">
+          <Col lg={6} md={6}>
+            <div className="heading_3">Get to know Me!</div>
+            <div className="about_text">
+              <p>
+                I'm a Frontend Web Developer building the Front-end of Websites
+                and Web Applications that leads to the success of the overall
+                product. Check out some of my work in the Projects section
+              </p>
+              <p>
+                I'm open to Job opportunities where I can contribute, learn and
+                grow. If you have a good opportunity that matches my skills and
+                experience then don't hesitate to contact me
+              </p>
+            </div>
+          </Col>
+          <Col lg={6} md={6}>
+            <div className="heading_3">Get to lnow Me!</div>
+            <div className="about_text">
+              <p>
+                I'm a Frontend Web Developer building the Front-end of Websites
+                and Web Applications that leads to the success of the overall
+                product. Check out some of my work in the Projects section
+              </p>
+              <p>
+                I'm open to Job opportunities where I can contribute, learn and
+                grow. If you have a good opportunity that matches my skills and
+                experience then don't hesitate to contact me
+              </p>
+            </div>
+          </Col>
+        </Row>
       </section>
     </>
   );
