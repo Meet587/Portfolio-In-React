@@ -26,7 +26,7 @@ const Header = () => {
             <img src={logo} alt="img" className="person-img"></img>
             <Link to={'/'} className="fc-primary content-center">Meet Rakholiya</Link>
           </div>
-          <div className="navigation">
+          <div className="navigation content-center">
             <Nav>
               <NavLink to={"/"}>HOME</NavLink>
               <NavLink to={"/about"}>ABOUT</NavLink>
