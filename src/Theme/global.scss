@@ -1,0 +1,37 @@
+$font-color:#333;
+$font-hover-color: #f0c60e;
+$bg-color:#fff;
+$font-family: sans-serif;
+
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// font size
+.fos-1{
+    font-size: 2rem;
+}
+
+// font color
+.fc-primary{
+    color: $font-color;
+}
+.fc-primary-hover{
+    color: $font-color;
+
+    &:hover{
+        color: $font-hover-color;
+    }
+}
+
+// font family 
+.ff-primary {
+    font-family: $font-family;
+}
+
+// backgroung color
+.bg-theme{
+    background-color: $bg-color;
+}

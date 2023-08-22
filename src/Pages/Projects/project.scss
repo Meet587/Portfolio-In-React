@@ -1,0 +1,10 @@
+@import "../home/home.scss";
+@import "../../assets/style/globle.scss";
+
+#project {
+  min-height: 100vh;
+  height: 100%;
+  .projects-content {
+    margin-top: 4rem;
+  }
+}

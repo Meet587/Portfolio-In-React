@@ -1,0 +1,106 @@
+// @import '../home/home.scss';
+// @import '../../assets/style/globle.scss';
+
+// .contact{ 
+//     background: linear-gradient(to right,rgba(245, 245, 245, 0.8),rgba(241, 241, 241, 0.8)), url('./img/bg\ img.jpg');
+//     font-family: var(--font-sans-pro);
+// }
+// .contact-content{
+//     box-shadow: 0 7px 29px 0;
+//     background: #fff;
+//     padding: 4rem;
+//     /* margin-top: 6rem; */
+//     max-width: 80rem;
+//     text-align: left;
+//     width: 75%;
+//     border-radius: 5px;
+//     margin: 5rem auto 0 auto;
+// }
+// .contact_form-field{
+//     margin-bottom: 4rem;
+// }
+// .contact_form-label{
+//     color: #666;
+//     font-size: 1.4rem;
+//     display: block;
+//     text-align: left;
+//     letter-spacing: 1px;
+//     margin-bottom: 1rem;
+//     font-weight: 700;
+// }
+// .contact_form-input{
+//     width: 100%;
+//     background-color: #f0f0f0;
+//     border: 1px solid #ebebeb;
+//     color: #333;
+//     border-radius: 5px;
+//     padding: 1.5rem;
+//     font-size: 1rem;
+//     font-weight: 400;
+// }
+// textarea{
+//     resize: none;
+//     font-family: var(--font-sans-pro);
+// }
+
+// /* ============footer============== */
+
+// .main-footer{
+//     background: #000;
+//     color: #fff;
+// }
+// .main-footer_upper{
+//     display: flex;
+//     padding: 4rem 0 ;
+//     justify-content: space-between;
+// }
+// .main-footer_row{
+//     width: 43%;
+//     text-rendering: auto;
+// }
+// .main-footer_heading{
+//     font-size: 1.4rem;
+//     letter-spacing: 1px;
+//     display: block;
+// }
+// .main-footer_desc{
+//     margin-top: 2rem;
+//     font-size: 1rem;
+//     letter-spacing: 1px;
+//     text-align: justify;
+// }
+// .social{
+//     display: grid;
+//     justify-content: flex-end;
+//     margin-right: 4rem;
+// }
+// .main-footer_social_icon{
+//     display: grid;
+//     grid-template-columns: 20% 20% 20% 20%;
+//     grid-column-gap: 25px;
+//     font-size: 2rem;
+// }
+// .main-footer_social_icon>a{
+//     color:  white;
+
+// }
+// hr{
+//     opacity: 0.5;
+// }
+// .main-footer_lower{
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 2.5rem;
+//     padding-bottom: 2.5rem;
+//     font-size: smaller;
+// }
+// .main-footer_lower>a{
+//     color: white;
+//     font-weight: bold;
+// }
+
+.sideImg{
+    height: 55vh;
+    width: -webkit-fill-available;
+    border-radius: 10px;
+}

@@ -1,0 +1,189 @@
+@import '../../assets/style/globle.scss';
+
+.home {
+  box-sizing: border-box;
+  background-position: center;
+  min-height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(235, 235, 235, 0.8),
+      rgba(238, 238, 238, 0.8)
+    ),
+    url("../../assets/img/bg\ img.jpg");
+}
+
+/* ----------- navbar ----------- */
+.header {
+  height: 14vh;
+  box-shadow: 0 0 10px 1px;
+  background-color: #fff;
+  position: static;
+  font-family: var(--font-sans-pro);
+}
+.header_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+}
+.left-items {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+.person-img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.person-name {
+  color: #333;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.person-img:hover + .person-name {
+  transition-duration: 0.4s;
+  color: var(--yellow-color);
+}
+.person-name:hover {
+  transition-duration: 0.4s;
+  color: var(--yellow-color);
+}
+.right-items {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.right-items > a {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.right-items > a:hover {
+  transition-duration: 0.4s;
+  color: var(--yellow-color);
+}
+
+// ------------ hero home ----------
+.home-hero {
+  box-sizing: border-box;
+  margin-left: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-contain {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70vw;
+  height: 70vh;
+}
+.main-contain > .heading {
+  position: relative;
+  margin-top: 2.4em;
+  font-family: ubuntu;
+  font-size: 3rem;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.1em;
+  color: #111;
+}
+.main-contain > .home-hero_contain {
+  margin-top: 1.5em;
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+  font-size: 1.5rem;
+  font-family: var(--font-sans-pro);
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 1.2px;
+  color: #333;
+}
+.main-contain > .project-hero_btn {
+  margin-top: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-contain > .project-hero_btn > .project-btn {
+  font-size: 2em;
+  visibility: hidden;
+}
+
+/* -------------logos------------ */
+.logos {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  width: 12%;
+  max-width: 15vw;
+}
+.logos > a {
+  text-decoration: none;
+  width: 140px;
+  color: white;
+  padding: 5px;
+  margin: 2px 0px;
+  font-family: "oswald", sans-serif;
+  text-align: right;
+  border-radius: 0 50px 50px 0;
+  transform: translate(-93px, 0px);
+  transition-duration: 2s;
+}
+.logos > a:hover {
+  transform: translate(0px, 0px);
+}
+
+.logos > .github {
+  background-color: hsl(0, 0%, 20%);
+}
+.logos > .linkedin {
+  background-color: hsl(201, 100%, 35%);
+}
+.logos > .twitter {
+  background-color: hsl(197, 100%, 47%);
+}
+
+.logos > a > i {
+  margin-left: 10px;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  color: black;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  transition-duration: 2s;
+  font-size: 27px;
+}
+.logos > a:hover > i {
+  transform: rotate(360deg);
+}
+.logos > a > i.fa-square-github {
+  color: hsl(0, 0%, 20%);
+}
+.logos > a > i.fa-linkedin {
+  color: hsl(201, 100%, 35%);
+}
+.logos > a > i.fa-square-twitter {
+  color: hsl(197, 100%, 47%);
+}
