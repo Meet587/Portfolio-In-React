@@ -1,0 +1,40 @@
+#footer {
+  height: auto;
+  background-color: black;
+  color: #fff;
+  padding: 2rem 6rem;
+  font-family: "Source Sans Pro", sans-serif;
+
+  a {
+    color: #fff;
+  }
+
+  .row {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    .col1 {
+      width: 100%;
+      .footer_text {
+        text-align: justify;
+        letter-spacing: 1px;
+      }
+    }
+    .col2 {
+      .footer_social_icon {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-column-gap: 25px;
+        a {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .footer_lower{
+    margin-top: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
