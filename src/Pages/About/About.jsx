@@ -49,7 +49,7 @@ const About = () => {
         </div>
       </section> */}
       <section id="about">
-        <div className="py-4 mb-5">
+        <div className="pt-4">
           <div className="heading_2">ABOUT ME</div>
           <div className="text-muted heading_text">
             <p>

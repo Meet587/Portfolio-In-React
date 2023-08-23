@@ -32,7 +32,7 @@ const Footer = () => {
                   target="_blank"
                   className="github"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/meet-rakholiya-115524221/"
