@@ -21,7 +21,7 @@ const Home = () => {
             >
               linkedIn <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="#" target="_blank" className="twitter">
+            <a href="https://twitter.com/Meet_587" target="_blank" className="twitter">
               Twitter <i className="fa-brands fa-square-twitter"></i>
             </a>
           </div>

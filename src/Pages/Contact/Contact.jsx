@@ -29,8 +29,8 @@ const Contact = () => {
           </div>
           <div className="contact-content mt-5">
             <Row>
-              <Col md={6}><img src={sideImg} className='sideImg' /></Col>
-              <Col md={6}>
+              <Col md={6} className="mb-4"><img src={sideImg} className='sideImg' /></Col>
+              <Col md={6} className="mb-4">
                 <Card>
                   <CardBody>
                     <Form action="#" className="contact_form" method="post">

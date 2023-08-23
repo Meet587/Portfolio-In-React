@@ -3,7 +3,7 @@
   background-color: black;
   color: #fff;
   padding: 2rem 6rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 
   a {
     color: #fff;
@@ -12,6 +12,7 @@
   .row {
     margin-top: 1rem;
     margin-bottom: 2rem;
+    display: flex !important;
     .col1 {
       width: 100%;
       .footer_text {
@@ -31,10 +32,35 @@
     }
   }
 
-  .footer_lower{
+  .footer_lower {
     margin-top: 2.4rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media only screen and (max-width: 768px) {
+    #footer {
+      padding: 2rem 4rem !important;
+    }
+    .social {
+      margin-top: 3rem;
+      justify-content: start !important;
+    }
+
+    .footer_social_icon {
+      grid-column-gap: 15px !important;
+      a {
+        font-size: 1.5rem !important;
+      }
+    }
+
+    .footer_lower {
+      display: block !important;
+      div {
+        display: flex;
+        justify-content: center;
+      }
+    }
   }
 }
