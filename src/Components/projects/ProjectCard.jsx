@@ -1,25 +1,28 @@
 import React from "react";
 import "./projects.scss";
-import { Card, CardBody, CardImg } from "reactstrap";
+import { Card, CardBody, CardImg, Col, Row } from "reactstrap";
 
-const ProjectCard = ({ img }) => {
+const ProjectCard = ({ img, link, text }) => {
   return (
     <>
       <div className="d-flex">
-        <Card className="project_card">
-          <CardBody>
-            <CardImg src={img}></CardImg>
-          </CardBody>
-        </Card>
-        <div className="">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-          animi quis sapiente, quibusdam atque veritatis libero praesentium
-          omnis a ducimus ut laudantium nam suscipit dolores corrupti!
-          Voluptatibus magnam tempora aspernatur atque eum molestiae.
-          Exercitationem consequatur totam quaerat libero qui. Quaerat eaque
-          dolorum consectetur accusantium placeat, dignissimos tempore sunt?
-          Fugiat, possimus!
-        </div>
+        <Row>
+          <Col lg={6} md={12}>
+            <a href={link} target={"_blank"} className="project_card">
+              <img src={img}></img>
+            </a>
+            {/* <iframe
+              className="project_card"
+              title="iFrame Example"
+              src={link}
+              width="400"
+              height="200"
+            ></iframe> */}
+          </Col>
+          <Col lg={6} md={12}>
+            <div className="project_text">{text}</div>
+          </Col>
+        </Row>
       </div>
     </>
   );

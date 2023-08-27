@@ -5,6 +5,9 @@
   min-height: 100vh;
   height: 100%;
   .projects-content {
-    margin-top: 4rem;
+    margin: 4rem 2rem;
+    .project{
+      margin: 3rem 2rem;
+    }
   }
 }

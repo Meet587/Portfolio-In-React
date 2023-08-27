@@ -2,99 +2,90 @@
 @import "../assets/style/globle.scss";
 
 header {
-  height: 14vh;
+  height: 90px;
   background-color: $bg-color;
   box-shadow: 0 0 10px 1px;
   position: static;
   font-family: $font-family;
-}
-.header_content {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 4rem;
+  font-family: "Ubuntu", sans-serif;
 
-  .brand_icon {
-    img:hover + a {
-      color: $font-hover-color;
-      transition-duration: 0.4s;
-    }
-    a:hover {
-      cursor: pointer;
-      color: $font-hover-color;
-      transition-duration: 0.4s;
-    }
-    a {
-      text-decoration: none;
-      margin-left: 1rem;
-      font-size: 1.3rem;
-      font-weight: 600;
-    }
-  }
+  .header_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
 
-  .navigation {
-    ul {
+    .brand_icon {
+      img:hover + a {
+        color: $font-hover-color;
+        transition-duration: 0.7s;
+      }
+      a:hover {
+        cursor: pointer;
+        color: $font-hover-color;
+        transition-duration: 0.7s;
+      }
       a {
-        margin-right: 2rem;
         text-decoration: none;
-        color: $font-color;
+        margin-left: 1rem;
+        font-size: 1.3rem;
         font-weight: 600;
+      }
+    }
 
-        &:hover {
-          color: $font-hover-color;
-          transition-duration: 0.4s;
+    .bar_icon {
+      cursor: pointer;
+      display: none;
+    }
+
+    .navigation {
+      ul {
+        a {
+          margin-right: 1.5rem;
+          margin-left: 1.5rem;
+          text-decoration: none;
+          color: $font-color;
+          font-weight: 600;
+
+          &:hover {
+            color: $font-hover-color;
+            transition-duration: 0.47s;
+          }
         }
       }
     }
   }
 }
-// .left-items {
-//   width: 50%;
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   color: #333;
-// }
-// .person-img {
-//   height: 3.5rem;
-//   width: 3.5rem;
-//   border-radius: 50%;
-//   cursor: pointer;
-// }
-// .person-name {
-//   color: #333;
-//   padding-left: 15px;
-//   display: flex;
-//   align-items: center;
-//   font-size: 1.5rem;
-//   font-weight: 700;
-//   cursor: pointer;
-//   letter-spacing: 1px;
-// }
-// .person-img:hover + .person-name {
-//   transition-duration: 0.4s;
-//   color: var(--yellow-color);
-// }
-// .person-name:hover {
-//   transition-duration: 0.4s;
-//   color: var(--yellow-color);
-// }
-// .right-items {
-//   width: 50%;
-//   display: flex;
-//   justify-content: flex-end;
-// }
-// .right-items > a {
-//   font-size: 1.2em;
-//   font-weight: 700;
-//   padding: 1rem 2rem;
-//   text-decoration: none;
-//   color: #333;
-//   position: relative;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
-// }
-// .right-items > a:hover {
-//   transition-duration: 0.4s;
-//   color: var(--yellow-color);
-// }
+
+@media only screen and (max-width: 992px) {
+  header {
+    .header_content {
+      padding: 1rem 2rem;
+    }
+    .bar_icon {
+      display: flex !important;
+      justify-content: center;
+    }
+    .navigation {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .header_content {
+    // display: flex;
+    height: inherit;
+    padding: 0.7rem 1.4rem;
+
+    .brand_icon {
+      // display: none !important;
+
+      a {
+        text-decoration: none;
+        margin-left: 0.5rem;
+        font-size: 1rem !important;
+        // font-weight: 600;
+      }
+    }
+  }
+}
