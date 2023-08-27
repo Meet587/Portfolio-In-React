@@ -56,7 +56,7 @@ const Footer = () => {
         </div>
         <div className="footer_lower">
           <div>&#169; Copyright {new Date().getFullYear()}.</div>
-          <div>
+          <div>&nbsp;
             Made By &nbsp;
             <a target="_blank" href="#" rel="noopener noreferrer">
               Meet Rakholiya

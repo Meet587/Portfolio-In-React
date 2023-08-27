@@ -21,23 +21,26 @@ const Home = () => {
             >
               linkedIn <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://twitter.com/Meet_587" target="_blank" className="twitter">
+            <a
+              href="https://twitter.com/Meet_587"
+              target="_blank"
+              className="twitter"
+            >
               Twitter <i className="fa-brands fa-square-twitter"></i>
             </a>
           </div>
           <div className="main-contain">
             <div className="heading">
-              <h3>HEY, I'M MEET RAKHOLIYA</h3>
+              HEY, I'M{" "}
+              <span className="heading_name"> &nbsp;MEET RAKHOLIYA</span>
             </div>
             <div className="home-hero_contain">
-              <p>
-                A Frontend focused Web Developer building the Frontend of
-                Websites and Web Applications that leads to the success of the
-                overall product
-              </p>
+              A Frontend focused Web Developer building the Frontend of Websites
+              and Web Applications that leads to the success of the overall
+              product
             </div>
             <div className="project-hero_btn">
-              <button className="project-btn" type="button">
+              <button className="btn_primary" type="button">
                 PROJECT
               </button>
             </div>

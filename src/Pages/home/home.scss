@@ -1,4 +1,4 @@
-@import '../../assets/style/globle.scss';
+@import "../../assets/style/globle.scss";
 
 .home {
   box-sizing: border-box;
@@ -87,6 +87,7 @@
 }
 .main-contain {
   position: absolute;
+  margin-top: 4rem;
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,11 +95,11 @@
   height: 70vh;
 }
 .main-contain > .heading {
-  position: relative;
-  margin-top: 2.4em;
-  font-family: ubuntu;
-  font-size: 3rem;
-  font-weight: 900;
+  // position: relative;
+  // margin-top: 2.4em;
+  // font-family: ubuntu;
+  font-size: 3em;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   letter-spacing: 0.1em;
@@ -109,7 +110,7 @@
   margin-left: 10%;
   text-align: center;
   width: 80%;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: var(--font-sans-pro);
   font-weight: 500;
   line-height: 32px;
@@ -117,14 +118,14 @@
   color: #333;
 }
 .main-contain > .project-hero_btn {
-  margin-top: 8em;
+  margin-top: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .main-contain > .project-hero_btn > .project-btn {
   font-size: 2em;
-  visibility: hidden;
+  // visibility: hidden;
 }
 
 /* -------------logos------------ */
@@ -188,3 +189,71 @@
 .logos > a > i.fa-square-twitter {
   color: hsl(197, 100%, 47%);
 }
+
+@media only screen and (max-width: 992px) {
+  .main-contain {
+    .heading {
+      font-size: 2.2em;
+      font-weight: 500;
+      display: flex;
+      justify-content: center;
+      letter-spacing: 0.1em;
+    }
+    .home-hero_contain {
+      margin-top: 1.3em;
+      margin-left: 10%;
+      // text-align: center;
+      width: 80%;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 1px;
+      color: #333;
+    }
+    .project-hero_btn {
+      margin-top: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 776px) {
+  .main-contain {
+    .heading {
+      font-size: 1.8em;
+    }
+    .home-hero_contain {
+      margin-top: 1.2rem;
+      // margin-left: 4%;
+    }
+  }
+}
+@media only screen and (max-width: 586px) {
+  .main-contain {
+    .heading {
+      font-size: 1.3em;
+    }
+    .home-hero_contain {
+      font-size: 0.8rem;
+      font-weight: 500;
+      line-height: 25px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .main-contain {
+    .heading {
+      text-align: center;
+      font-size: 1rem;
+      display: block;
+      .heading_name{
+        display: block;
+      }
+    }
+    .home-hero_contain{
+      font-size: 0.7rem;
+    }
+  }
+}
+

@@ -13,7 +13,7 @@ import {
   Row,
 } from "reactstrap";
 import "./contact.scss";
-import sideImg from '../../assets/img/sidenav2.jpg'
+import sideImg from '../../assets/img/profile-img.png'
 
 const Contact = () => {
   return (

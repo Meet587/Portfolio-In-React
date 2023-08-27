@@ -10,14 +10,14 @@ import {
   Row,
 } from "reactstrap";
 import logo from "../assets/img/logo.png";
+import './Header.scss'
 
 const Header = () => {
-  const [toggleMenu, setToggleMenu] = useState(false);
+  // const [toggleMenu, setToggleMenu] = useState(false);
 
-  const toggleOffcanvas = () => {
-    setToggleMenu(!toggleMenu);
-  };
-  console.log(toggleMenu);
+  // const toggleOffcanvas = () => {
+  //   setToggleMenu(!toggleMenu);
+  // };
   return (
     <>
       <header>
@@ -28,19 +28,10 @@ const Header = () => {
               Meet Rakholiya
             </Link>
           </div>
-          <div className="content-center bar_icon" onClick={toggleOffcanvas}>
+          {/* <div className="content-center bar_icon" onClick={toggleOffcanvas}>
             <i className="fas fa-bars"></i>
-          </div>
-          <div>
-            <Offcanvas toggle={toggleMenu}>
-              <OffcanvasHeader toggle={toggleOffcanvas}>
-                Offcanvas
-              </OffcanvasHeader>
-              <OffcanvasBody>
-                <strong>This is the Offcanvas body.</strong>
-              </OffcanvasBody>
-            </Offcanvas>
-          </div>
+          </div> */}
+         
           <div className="navigation content-center">
             <Nav>
               <NavLink to={"/"}>HOME</NavLink>
