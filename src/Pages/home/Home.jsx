@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "../../Components/Header";
 import "./home.scss";
 
 const Home = () => {
   return (
     <>
+      <Header />
       <section id="home" className="home">
         <div className="home-hero">
           <div className="logos">
@@ -40,9 +42,9 @@ const Home = () => {
               product
             </div>
             <div className="project-hero_btn">
-              <button className="btn_primary" type="button">
+              <a role={'button'} href="#project" className="btn_primary"  type="button">
                 PROJECT
-              </button>
+              </a>
             </div>
           </div>
         </div>

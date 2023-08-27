@@ -13,7 +13,8 @@ import {
   Row,
 } from "reactstrap";
 import "./contact.scss";
-import sideImg from '../../assets/img/profile-img.png'
+import sideImg from "../../assets/img/profile-img.png";
+import Footer from "../../Components/Footer";
 
 const Contact = () => {
   return (
@@ -29,7 +30,9 @@ const Contact = () => {
           </div>
           <div className="contact-content mt-5">
             <Row>
-              <Col md={6} className="mb-4"><img src={sideImg} className='sideImg' /></Col>
+              <Col md={6} className="mb-4">
+                <img src={sideImg} className="sideImg" />
+              </Col>
               <Col md={6} className="mb-4">
                 <Card>
                   <CardBody>
@@ -86,6 +89,7 @@ const Contact = () => {
           </div>
         </Container>
       </section>
+      <Footer />
     </>
   );
 };

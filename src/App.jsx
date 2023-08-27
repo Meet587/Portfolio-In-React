@@ -10,12 +10,11 @@ import Home from "./Pages/home/Home";
 function App() {
   return (
     <>
-      <Header />
       <Home />
       <About />
       <Project />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
