@@ -1,6 +1,6 @@
 import React from "react";
 import "./projects.scss";
-import { Card, CardBody, CardImg, Col, Row } from "reactstrap";
+import { Col, Row } from "reactstrap";
 
 const ProjectCard = ({ img, link, text }) => {
   return (
